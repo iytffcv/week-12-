@@ -46,3 +46,9 @@ else:
     print("You failed the test. 😢")
 # practice problem :
 # The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+password = "mypassword1"
+
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Valid password")
+else:
+    print("Invalid password")
