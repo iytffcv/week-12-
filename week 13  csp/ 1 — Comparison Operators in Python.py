@@ -35,6 +35,14 @@ print(a <= b)   # True
 9 < 4 #FALSE
 8 != 8 #FLASE
 # Create a simple grade-checking condition:
+# where a student must check if their score is greater than or equal to 60 to pass a test.
+# Ask for the student's score
+score = int(input("Enter your score: "))
 
+
+if score >= 60:
+    print("You passed the test! 🎉")
+else:
+    print("You failed the test. 😢")
 # practice problem :
-# where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
