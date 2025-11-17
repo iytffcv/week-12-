@@ -92,3 +92,40 @@ print("Colors as list:", colors_list)
 dup_list = [1, 2, 2, 3, 3, 3]
 unique_set = set(dup_list)
 print("Unique elements:", unique_set)
+
+
+# Create a 2D list (matrix) — for example, 3x4 grid
+rows = 3
+cols = 4
+matrix = [[0 for _ in range(cols)] for _ in range(rows)]
+
+# Print the empty matrix
+print("Initial matrix:")
+for row in matrix:
+    print(row)
+
+# Set some values
+matrix[0][0] = 1
+matrix[1][2] = 5
+matrix[2][3] = 9
+
+# Print updated matrix
+print("\nUpdated matrix:")
+for row in matrix:
+    print(row)
+
+# Iterate through the matrix and do something
+print("\nSum of all elements:")
+total = 0
+for row in matrix:
+    for val in row:
+        total += val
+print(total)
+
+# Transpose the matrix (rows become columns)
+transpose = [[matrix[r][c] for r in range(rows)] for c in range(cols)]
+
+print("\nTransposed matrix:")
+for row in transpose:
+    print(row)
+    
