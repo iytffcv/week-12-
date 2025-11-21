@@ -128,4 +128,8 @@ transpose = [[matrix[r][c] for r in range(rows)] for c in range(cols)]
 print("\nTransposed matrix:")
 for row in transpose:
     print(row)
-    
+
+corses = ['math', 'Art' , 'compSci' , "Ela"]
+
+
+print(corses[-1])
